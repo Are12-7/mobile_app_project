@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/claret_shade_1"
+    tools:context=".RegisterActivity">
+
+
+    <!--Email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILEmail"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="140dp"
+        android:hint="Enter Email"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idInputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--PASSWORD -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTILEmail"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Password"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idInputPassword"
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--CONFIRM PASSWORD -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILCnfPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_below="@+id/idTILPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Confirm Password"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idInputCnfPwd"
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/idBtnRegister"
+        android:layout_below="@+id/idTILCnfPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_back"
+        android:text="Register"
+        android:textAllCaps="false"
+    />
+
+    <TextView
+        android:id="@+id/idLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you already have an account? Login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@id/idBtnRegister"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+    />
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_back"
+        android:visibility="gone"
+    />
+
+
+
+
+
+
+</RelativeLayout>

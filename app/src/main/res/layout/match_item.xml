@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/claret_shade_1">
+
+        <!--image for match-->
+        <ImageView
+            android:id="@+id/idHomeViewImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+        <!--HOME TEAM -->
+        <TextView
+            android:id="@+id/idHomeTName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Home Team Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/idHomeViewImg"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/idAwayTName"
+            android:layout_toStartOf="@id/idAwayTName"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+        <!--AWAY TEAM -->
+        <TextView
+            android:id="@+id/idAwayTName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Away Team"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_below="@id/idHomeViewImg"
+            android:layout_margin="3dp"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

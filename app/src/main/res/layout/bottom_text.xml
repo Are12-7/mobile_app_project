@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idViewMatch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/claret_shade_1">
+
+
+
+    <!--HEADER-->
+    <TextView
+        android:id="@+id/idHomeMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:text="Match"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!--IMAGE-->
+    
+    <ImageView
+        android:id="@+id/idHomeViewImg"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/idHomeMatch"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <!--HOME TEAM NAME-->
+    <TextView
+        android:id="@+id/idHomeTName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idHomeMatch"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idHomeViewImg"
+        android:padding="3dp"
+        android:text="Home Team"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!--AWAY TEAM NAME-->
+    <TextView
+        android:id="@+id/idAwayTName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idHomeTName"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idHomeViewImg"
+        android:padding="3dp"
+        android:text="Away Team"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--DATE-->
+    <TextView
+        android:id="@+id/idDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idAwayTName"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idHomeViewImg"
+        android:padding="3dp"
+        android:text="Date"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--DESCRIPTION-->
+    <TextView
+        android:id="@+id/idDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idDate"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idHomeViewImg"
+        android:padding="3dp"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/idHomeViewImg">
+
+        <!--Edit Button-->
+        <Button
+            android:id="@+id/idBtnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="EDIT"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+        <!--Location Button-->
+        <Button
+            android:id="@+id/idBtnViewLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="LOCATION"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

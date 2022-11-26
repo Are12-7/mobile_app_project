@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456968782468",
+    "project_id": "mobile-app-44f26",
+    "storage_bucket": "mobile-app-44f26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456968782468:android:a71a7495b92a3d41f078d1",
+        "android_client_info": {
+          "package_name": "ca.georgebrown.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456968782468-36svu6asnf0bs7a45as84la99ca565lh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcnR56w_L6yPRRzcyrUpcQA5sQq6EvvQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456968782468-36svu6asnf0bs7a45as84la99ca565lh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
